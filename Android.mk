@@ -1,5 +1,11 @@
-ifeq ($(WITH_MICROG), true)
-LOCAL_PATH := $(call my-dir)
+#ifeq ($(TARGET_DISABLES_GMS), true)
 
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
+PRODUCT_PACKAGES += \
+    GmsCore \
+    GsfProxy \
+    Phonesky
+    
+#LOCAL_PATH := $(call my-dir)
+#include $(call all-subdir-makefiles,$(LOCAL_PATH))
+
+#endif

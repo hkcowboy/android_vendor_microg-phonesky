@@ -1,0 +1,18 @@
+prebuilt_etc {
+    name: "privapp-permissions-com.android.vending.xml",
+    src: "privapp-permissions-com.android.vending.xml",
+    product_specific: true,
+    relative_install_path: "permissions",
+}
+
+android_app_import {
+    name: "Phonesky",
+    owner: "microg",
+    apk: "Phonesky.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
